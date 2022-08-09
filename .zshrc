@@ -10,7 +10,7 @@ setopt autocd
 bindkey -e
 
 # setting simple custom PS1 user prompt
-PS1="%~ > "
+PROMPT="%F{7}[%f%F{14}%n%f@%F{208}%~%f%F{7}]%f "
 
 # custom PATH directories
 
