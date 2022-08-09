@@ -36,8 +36,6 @@ neofetch
 
 # easier and quicker exiting from terminal
 alias x='exit'
-# setting a global alias for topgrade (global upgrade suite) without putting in PATH
-alias tgrade='sudo ~/tools/topgrade'
 # making it easier to open something in gedit
 alias ee='sudo gedit'
 # check NetworkManager status (quickly)
