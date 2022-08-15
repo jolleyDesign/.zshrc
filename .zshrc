@@ -23,6 +23,9 @@ export PATH="$PATH:/home/jolley/.local/bin"
 # adding path for Golang
 export PATH="$PATH:/usr/local/go/bin"
 export GOPATH="$PATH:/home/jolley/golib"
+# adding paths for pnpm
+export PNPM_HOME="/home/jolley/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
 
 
 
@@ -33,7 +36,7 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)
 
-# run neofetch on startup
+# run neofetch on startup, purely for looks...
 neofetch
 
 # - #
@@ -98,12 +101,5 @@ zstyle :compinstall filename '/home/jolley/.zshrc'
 autoload -Uz compinit
 compinit
 
-
-
 # adding ZSH syntax highlighting plugin, found on GitHub
 source /home/jolley/tools/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# pnpm
-export PNPM_HOME="/home/jolley/.local/share/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-# pnpm end
