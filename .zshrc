@@ -14,10 +14,16 @@ PROMPT="%F{7}[%f%F{14}%n%f@%F{208}%~%f%F{7}]%f "
 
 # custom PATH directories
 
-# adding path to sbin directory
+# adding path for sbin directory
 export PATH="$PATH:/sbin"
-# adding path to android-studio
+# adding path for android-studio
 export PATH="$PATH:/home/jolley/tools/android-studio/bin/"
+# adding path for .local env
+export PATH="$PATH:/home/jolley/.local/bin"
+# adding path for Golang
+export PATH="$PATH:/usr/local/go/bin"
+export GOPATH="$PATH:/home/jolley/golib"
+
 
 
 # defining auto/tab complete functions
@@ -36,6 +42,8 @@ neofetch
 
 # easier and quicker exiting from terminal
 alias x='exit'
+# setting a global alias for topgrade (global upgrade suite) without putting in PATH
+alias tgrade='sudo ~/tools/topgrade'
 # making it easier to open something in gedit
 alias ee='sudo gedit'
 # check NetworkManager status (quickly)
@@ -96,3 +104,8 @@ compinit
 
 # adding ZSH syntax highlighting plugin, found on GitHub
 source /home/jolley/tools/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# pnpm
+export PNPM_HOME="/home/jolley/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
