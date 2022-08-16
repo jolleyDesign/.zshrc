@@ -102,5 +102,5 @@ autoload -Uz compinit
 compinit
 
 # adding ZSH syntax highlighting plugin, found on GitHub
-# link to package: https://github.com/zsh-users/zsh-syntax-highlighting
+# link to package: https://github.com/jolleyDesign/zsh-syntax-highlighting
 source /home/jolley/tools/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
