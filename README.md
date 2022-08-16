@@ -5,4 +5,4 @@ Most of the aliases and functions were migrated from my BASH instance (.bashrc).
 
 [Here's a great little website for customizing your Zsh prompt](https://zsh-prompt-generator.site/)
 
-[Link to the ZSH Syntax Highlighting repo](https://github.com/zsh-users/zsh-syntax-highlighting)
+[Link to the ZSH Syntax Highlighting repo](https://github.com/jolleyDesign/zsh-syntax-highlighting)
