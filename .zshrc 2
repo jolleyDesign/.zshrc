@@ -1,0 +1,30 @@
+# .zshrc from work computer, 2024
+
+neofetch
+
+alias x='exit'
+alias l='ls'
+alias ll='ls -lah'
+alias cdw='cd ~/Desktop/dev/'
+alias zed='code ~/.zshrc'
+alias tis='touch index.html style.css'
+alias bb='brew update && brew upgrade'
+alias h='history'
+alias cl='clear'
+alias vc='code'
+alias cdo="code ."
+alias .="pwd"
+alias ..="cd .."
+
+tempe () {
+  cd "$(mktemp -d)"
+  if [[ $# -eq 1 ]]; then
+    \mkdir -p "$1"
+    cd "$1"
+  fi
+}
+
+
+PROMPT="%F{7}[%f%F{14}%n%f@%F{208}%~%f%F{7}]%f "
+
+source /Users/alex.jolley/tools/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
