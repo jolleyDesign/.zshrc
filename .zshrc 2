@@ -1,5 +1,9 @@
 # .zshrc from work computer, 2024
 
+HISTFILE=~/.config/.histfile
+HISTSIZE=1000
+SAVEHIST=10000
+
 neofetch
 
 alias x='exit'
