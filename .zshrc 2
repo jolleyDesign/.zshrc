@@ -19,6 +19,7 @@ alias vc='code'
 alias cdo="code ."
 alias .="pwd"
 alias ..="cd .."
+alias nrd="npm run dev"
 
 tempe () {
   cd "$(mktemp -d)"
@@ -31,4 +32,4 @@ tempe () {
 
 PROMPT="%F{7}[%f%F{14}%n%f@%F{208}%~%f%F{7}]%f "
 
-source /Users/alex.jolley/tools/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/$/tools/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
