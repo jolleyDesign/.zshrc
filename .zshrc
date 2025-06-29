@@ -11,7 +11,15 @@ setopt autocd
 
 # custom aliases
 alias x='exit'
-alias ll='ls -lah'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+
+alias ls='eza'
+alias ll='eza -l -F -a -h --color=always --icons=always --hyperlink --group-directories-first --sort=Name --total-size'
+alias ld='eza -D -a -l'
+
 alias ee='sudo gedit'
 alias explore='xdg-open'
 alias sai='sudo apt install'
@@ -20,6 +28,10 @@ alias h='history'
 alias cl='clear'
 alias vc='code'
 alias cda='cd ~/.archive'
+alias zed="code ~/.zshrc"
+alias penpot-start='sudo docker compose -p penpot -f docker-compose.yaml up -d'
+alias penpot-stop='sudo docker compose -p penpot -f docker-compose.yaml down'
+alias ged='code ~/.config/ghostty/config'
 
 # function for quick opening yazi, and auto cding into directory
 function y() {
