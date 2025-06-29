@@ -16,9 +16,9 @@ alias ...='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
 
-alias ls='eza'
-alias ll='eza -l -F -a -h --color=always --icons=always --hyperlink --group-directories-first --sort=Name --total-size'
-alias ld='eza -D -a -l'
+alias ll='ls -lah --color=auto'
+
+alias ff='fzf'
 
 alias ee='sudo gedit'
 alias explore='xdg-open'
