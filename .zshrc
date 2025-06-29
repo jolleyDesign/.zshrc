@@ -19,6 +19,7 @@ alias cdw='cd ~/dev'
 alias h='history'
 alias cl='clear'
 alias vc='code'
+alias cda='cd ~/.archive'
 
 # function for quick opening yazi, and auto cding into directory
 function y() {
@@ -33,6 +34,7 @@ function y() {
 # adds a random number to the end to prevent duplicate filenames  
 archive() {
     sudo mv -i $1 ~/.archive/"$1-archive-$RANDOM"
+    echo "Sent the following to ~/.archive: $1"
 }
 
 # linking to syntax highlighting script
