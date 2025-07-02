@@ -16,6 +16,10 @@ alias ...='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
 
+alias up='topgrade'
+
+alias cat='bat'
+
 alias ll='ls -lah --color=auto'
 
 alias ff='fzf'
@@ -32,6 +36,8 @@ alias zed="code ~/.zshrc"
 alias penpot-start='sudo docker compose -p penpot -f docker-compose.yaml up -d'
 alias penpot-stop='sudo docker compose -p penpot -f docker-compose.yaml down'
 alias ged='code ~/.config/ghostty/config'
+
+alias fig='figma-linux'
 
 # function for quick opening yazi, and auto cding into directory
 function y() {
