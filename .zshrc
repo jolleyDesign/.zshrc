@@ -23,6 +23,8 @@ alias ...='z ../..'
 alias .3='z ../../..'
 alias .4='z ../../../..'
 
+alias cd='z'
+
 alias cat='bat'
 
 alias l='ls -lah --color=auto'
@@ -142,7 +144,7 @@ add-font-folder() {
   echo "Fonts are installed!"
 }
 
-# Display hotkeys in the terminal
+# Display Lomarchy hotkeys in the terminal
 hotkeys() {
   echo "---Navigation hotkeys---"
   echo "Super + Space: app launcher"
@@ -195,3 +197,29 @@ eval "$(zoxide init zsh)"
 export PATH="$PATH:/home/jolley/.lmstudio/bin"
 # End of LM Studio CLI section
 
+function stb-media() {
+  scp -r $1 root@batocera.local:/media/emulation/batocera/kodi
+}
+
+# function stb-games() {
+#   $system
+
+#   case $system in
+#     "n64")
+#       $system="n64"
+#       ;;
+#     "gba")
+#       $system="gba"
+#       ;;
+#     "gba")
+#       $system="gbc"
+#       ;;
+#     "gamecube")
+#       $system="gamecube"
+#       ;;
+#     "nds")
+#       $system="nds"
+#       ;;
+    
+#   "scp -r $1 root@batocera.local:/media/emulation/$system"
+# }
